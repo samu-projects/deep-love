@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Practice-Website</title>
+</head>
+<body>
+    <header>
+        <a href="#" class="logo">Logo</a>
+        <ul class="navegacion">
+            <li><a href="#" class="active">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Events</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </header>
+
+    <section class="parallax">
+        <h2 id="text">Hola  ♥</h2>
+        <img src="img/monutain_01.png" id="m1">
+        <img src="img/trees_02.png" id="t2">
+        <img src="img/monutain_02.png" id="m2">
+        <img src="img/trees_01.png" id="t1">
+        <img src="img/man.png" id="man">
+        <img src="img/plants.png" id="plants">
+    </section>
+
+    <section class="sec">
+        <h2>I love you</h2> <br>
+        <p>Le hablé de ti a mi humilde corazón, Y aunque se negaba a escucharme, decidí hablarle a la fuerza, le dije que eras así como un ángel, así de tierna, así perfecta. Le dije que eras mi sueño más lindo y mi entera devoción… también le advertí que mirar tu rostro era como tener al frente la felicidad… le anticipe que no fuese a pensar que eras una mentira porque te describiría tan bella o tal vez mejor que a una verdad. <br><br>
+            En eso me miro escéptico, pues, aun nada creía, entonces le mostré tu nombre grabado en el confín más remoto, de la memoria mía. Por consiguiente, le Dije: descubrí que ella no es hermosa como las rosas, sino que las rosas son hermosas como ella, y aumenté que eras mi insaciable antojo… le dije que tus ojos no son como estrellas sino más bien que las estrellas son bellas, pero solo porque son como tus ojos.</p>
+    </section>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/ScrollTrigger.min.js"></script>
+
+    <script>
+        gsap.from("#m1", {
+            scrollTrigger : {scrub: true},
+            y: 100,
+        })
+
+        gsap.from("#m2", {
+            scrollTrigger : {scrub: true },
+            y: 50,
+        })
+        gsap.from("#t2", {
+            scrollTrigger : {scrub: true },
+            x: -50,
+        })
+
+        gsap.from("#t1", {
+            scrollTrigger : {scrub: true },
+            x: 50,
+        })
+
+        gsap.from("#man", {
+            scrollTrigger : {scrub: true },
+            x: -250,
+        })
+        gsap.from("#plants", {
+            scrollTrigger : {scrub: true },
+            x: -50,
+        })
+    </script>
+</body>
+</html>
